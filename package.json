@@ -1,0 +1,41 @@
+{
+  "name": "money_manager_2021",
+  "version": "1.0.0",
+  "description": "money management app",
+  "main": "server.js",
+  "scripts": {
+    "dev:client": "cd ../client && npm run start",
+    "dev:server": "cross-env NODE_ENV=development nodemon init.js",
+    "server": "nodemon init.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joonfluence/react-express.git"
+  },
+  "keywords": [
+    "money"
+  ],
+  "author": "Chris Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joonfluence/react-express/issues"
+  },
+  "homepage": "https://piggybanks.netlify.app",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  },
+  "type": "module"
+}
